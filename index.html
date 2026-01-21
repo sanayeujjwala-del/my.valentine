@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page active" id="page1">
+    <h1>Hey! 👋</h1>
+    <p>I made something for you :)<br>Do you want to see it?</p>
+    <div class="buttons">
+      <button onclick="goTo('yes1')">Yes</button>
+      <button onclick="goTo('no1')">No</button>
+    </div>
+  </div>
+
+  <!-- NO PAGE -->
+  <div class="page" id="no1">
+    <h1>HOW DARE YOU 😤</h1>
+    <button onclick="goTo('page1')">GO BACK!!</button>
+  </div>
+
+  <!-- YES PAGE -->
+  <div class="page" id="yes1">
+    <h1>That’s a GOOD BOY 😌💗</h1>
+    <button onclick="goTo('page2')">CLICK!!</button>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page" id="page2">
+    <h1>Umm… 🥺</h1>
+    <p>Will you be my Valentine? 💖</p>
+    <div class="buttons">
+      <button onclick="goTo('yes2')">Of course!</button>
+      <button onclick="goTo('no2')">Nope</button>
+    </div>
+  </div>
+
+  <!-- NOPE PAGE -->
+  <div class="page" id="no2">
+    <h1>DID YOU JUST SAY NO?! 😱</h1>
+    <button onclick="goTo('page2')">Go Back</button>
+  </div>
+
+  <!-- YES VALENTINE -->
+  <div class="page" id="yes2">
+    <h1>YAYYYYY!! 🎉💞</h1>
+    <div class="gift" onclick="goTo('gift')">🎁</div>
+  </div>
+
+  <!-- GIFT PAGE -->
+  <div class="page" id="gift">
+    <h1>Cheers to our love 🥂💖</h1>
+    <p>Wait! There’s more 👀✨</p>
+    <button onclick="goTo('letter')">Next</button>
+  </div>
+
+  <!-- LETTER PAGE -->
+  <div class="page" id="letter">
+    <h1>A letter just for you 💌</h1>
+    <button onclick="goTo('openLetter')">OPEN</button>
+  </div>
+
+  <!-- FINAL LETTER -->
+  <div class="page" id="openLetter">
+    <div class="letter-box">
+      <p>
+        Dear You 💖<br><br>
+        From the moment you came into my life, everything felt warmer and happier.
+        You make me smile without even trying, and I’m so grateful for you.
+        Thank you for being you. 💕<br><br>
+        Always yours 💌
+      </p>
+      <p><strong>Scan below 👀✨</strong></p>
+      <div class="qr">📷</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
