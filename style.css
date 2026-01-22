@@ -93,3 +93,21 @@ button:hover {
   margin-top: 10px;
   font-weight: bold;
 }
+.confetti {
+  position: fixed;
+  font-size: 26px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: blast 1.5s ease-out forwards;
+}
+
+@keyframes blast {
+  from {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--x), var(--y)) scale(0.8);
+    opacity: 0;
+  }
+}
