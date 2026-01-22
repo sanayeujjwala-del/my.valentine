@@ -80,3 +80,16 @@ button:hover {
   0%,100% {transform: translateY(0);}
   50% {transform: translateY(-10px);}
 }
+.qr-image {
+  width: 180px;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.scan-text {
+  font-size: 18px;
+  color: #ff4d88;
+  margin-top: 10px;
+  font-weight: bold;
+}
